@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Chat";
+}
+
+<h2>AI ChatBot</h2>
+
+<div id="chatMessages" style="border:1px solid #ccc; padding:10px; height:300px; overflow-y:scroll;"></div>
+
+<form id="chatForm">
+    <input type="text" id="messageInput" autocomplete="off" placeholder="Type your message..." />
+    <button type="submit">Send</button>
+</form>
+
+@section Scripts {
+    <script>
+        document.getElementById("chatForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const message = document.getElementById("messageInput").value;
+
+            const response = await fetch('/api/Chat/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(message)
+            });
+
+            document.getElementById("messageInput").value = '';
+        });
+    </script>
+}
