@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AIChatBot.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+454ca6bb3bae255730f1087ca79eb19008a508ea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+613e8e45ee6fb00628e50b9a1fbf86c3f236f0b1")]
 [assembly: System.Reflection.AssemblyProductAttribute("AIChatBot.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AIChatBot.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
