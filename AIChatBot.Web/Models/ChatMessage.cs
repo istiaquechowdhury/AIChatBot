@@ -17,7 +17,7 @@ namespace AIChatBot.Web.Models
         [Required]
         public string Message { get; set; }
 
-        public bool IsApproved { get; set; } = true; 
+        public bool IsApproved { get; set; } = false; 
 
         public bool IsDeleted { get; set; } = false;
 

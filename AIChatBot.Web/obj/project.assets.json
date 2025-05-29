@@ -8983,11 +8983,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\istia\\source\\repos\\AIChatBot\\AIChatBot.Web\\AIChatBot.Web.csproj",
+      "projectUniqueName": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\AIChatBot.Web.csproj",
       "projectName": "AIChatBot.Web",
-      "projectPath": "C:\\Users\\istia\\source\\repos\\AIChatBot\\AIChatBot.Web\\AIChatBot.Web.csproj",
+      "projectPath": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\AIChatBot.Web.csproj",
       "packagesPath": "C:\\Users\\istia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\istia\\source\\repos\\AIChatBot\\AIChatBot.Web\\obj\\",
+      "outputPath": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

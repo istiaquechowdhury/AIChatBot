@@ -1,17 +1,19 @@
-﻿using AIChatBot.Web.Hubs;
+﻿using AIChatBot.Web.DTO;
+using AIChatBot.Web.Hubs;
 using AIChatBot.Web.Interfaces;
 using AIChatBot.Web.Models;
 using AIChatBot.Web.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
 namespace AIChatBot.Web.APIControllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    [Authorize]
+   
     
     public class ChatController : ControllerBase
     {
@@ -41,7 +43,7 @@ namespace AIChatBot.Web.APIControllers
                 Message = messageText,
                 Sender = "user",
                 Timestamp = DateTime.UtcNow,
-                IsApproved = true,
+                IsApproved = false,
                 IsDeleted = false
             };
 
@@ -59,7 +61,7 @@ namespace AIChatBot.Web.APIControllers
                 Message = botReplyText,
                 Sender = "bot",
                 Timestamp = DateTime.UtcNow,
-                IsApproved = true,
+                IsApproved = false,
                 IsDeleted = false
             };
 
@@ -72,6 +74,71 @@ namespace AIChatBot.Web.APIControllers
 
             return Ok(new { userMessage, botMessage });
         }
+
+
+        [HttpPut("{id}")]
+        
+        public async Task<IActionResult> EditMessage(int id, [FromBody] EditMessageDTO dto)
+        {
+            if (string.IsNullOrWhiteSpace(dto.Message))
+                return BadRequest("Message cannot be empty.");
+
+            var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+
+            var message = await _unitOfWork.ChatMessages.GetMessageByIdAsync(id);
+            if (message == null || message.IsDeleted)
+                return NotFound("Message not found or already deleted.");
+
+            // Only the sender or admin can edit
+            //bool isAdmin = User.IsInRole("Admin");
+            //if (message.UserId != userId && !isAdmin)
+            //    return Forbid();
+
+            message.Message = dto.Message;
+            message.Timestamp = DateTime.UtcNow; // Optionally update the timestamp
+
+            await _unitOfWork.CompleteAsync();
+
+            return Ok("Message updated.");
+        }
+
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteMessage(int id)
+        {
+            var message = await _unitOfWork.ChatMessages.GetMessageByIdAsync(id);
+
+            if (message.Sender == "bot")
+                return BadRequest("Cannot delete bot message");
+
+            if (message == null || message.IsDeleted) return BadRequest();
+
+            message.IsDeleted = true;
+            await _unitOfWork.CompleteAsync();
+            return Ok("message softDelete successfull");
+
+
+
+        }
+
+        [HttpPatch("{id}/approve")]
+        public async Task<IActionResult> ApproveMessage(int id)
+        {
+            var message = await _unitOfWork.ChatMessages.GetMessageByIdAsync(id);
+
+            if (message == null || message.IsDeleted)
+                return NotFound("Message not found or already deleted.");
+
+            if (message.IsApproved)
+                return BadRequest("Message already approved.");
+
+            message.IsApproved = true;
+            await _unitOfWork.CompleteAsync();
+
+            return Ok("Message approved successfully.");
+        }
+
+
 
 
 

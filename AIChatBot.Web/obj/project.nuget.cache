@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZxlxPiSunXk=",
+  "dgSpecHash": "6Q3Yq9AOcQw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\istia\\source\\repos\\AIChatBot\\AIChatBot.Web\\AIChatBot.Web.csproj",
+  "projectFilePath": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\AIChatBot.Web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\istia\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\istia\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

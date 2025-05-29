@@ -1,6 +1,59 @@
 [
   {
     "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
+    "Method": "EditMessage",
+    "RelativePath": "api/Chat/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "AIChatBot.Web.DTO.EditMessageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
+    "Method": "DeleteMessage",
+    "RelativePath": "api/Chat/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
+    "Method": "ApproveMessage",
+    "RelativePath": "api/Chat/{id}/approve",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
     "Method": "GetChatHistory",
     "RelativePath": "api/Chat/history",
     "HttpMethod": "GET",
