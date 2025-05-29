@@ -12,7 +12,7 @@
     <button type="submit">Send</button>
 </form>
 
-@section Scripts {
+@* @section Scripts {
     <script>
             async function loadMessages() {
             const response = await fetch('/api/chat/messages');
@@ -23,6 +23,17 @@
 
             messages.forEach(msg => {
                 const div = document.createElement("div");
+
+                      // Start with message text
+                    let content = `<strong>${msg.sender}:</strong> <span id="msg-${msg.id}">${msg.message}</span>`;
+
+                    // 👇 Add Edit button only for user messages
+                    if (msg.sender === "user") {
+                        content += `
+                            <button onclick="editMessage(${msg.id}, '${msg.message.replace(/'/g, "\\'")}')">Edit</button>
+                        `;
+                    }
+
                 div.innerHTML = `<strong>${msg.sender}:</strong> ${msg.message}`;
                 chatBox.appendChild(div);
             });
@@ -47,5 +58,88 @@
             document.getElementById("messageInput").value = '';
              loadMessages();
         });
+    </script>
+} *@
+@section Scripts {
+    <script>
+        async function loadMessages() {
+            const response = await fetch('/api/Chat/messages');
+            const messages = await response.json();
+
+            const chatBox = document.getElementById("chatMessages");
+            chatBox.innerHTML = '';
+
+            messages.forEach(msg => {
+                const div = document.createElement("div");
+
+                // Show sender and message
+                let content = `<strong>${msg.sender}:</strong> <span id="msg-${msg.id}">${msg.message}</span>`;
+
+                // ✅ Add Edit button only for user messages
+                if (msg.sender === "user") {
+                    content += ` <button onclick="editMessage(${msg.id}, '${msg.message.replace(/'/g, "\\'")}')">Edit</button>`;
+                }
+
+                div.innerHTML = content;
+                chatBox.appendChild(div);
+            });
+        }
+
+        // 👇 Reload messages on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            loadMessages();
+        });
+
+        // 👇 Send message handler
+        document.getElementById("chatForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const message = document.getElementById("messageInput").value;
+
+            await fetch('/api/Chat/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(message)
+            });
+
+            document.getElementById("messageInput").value = '';
+            await loadMessages(); // 👈 Reload messages after sending
+        });
+
+        // 🛠️ Placeholder function for edit (we’ll define next)
+        function editMessage(id, currentText) {
+            alert("Clicked edit for message: " + id);
+        }
+
+
+        function editMessage(id, currentText) {
+            const messageSpan = document.getElementById(`msg-${id}`);
+
+            // Replace the message text with an input box and save button
+            messageSpan.innerHTML = `
+                <input type="text" id="editInput-${id}" value="${currentText}" />
+                <button onclick="saveEditedMessage(${id})">Save</button>
+            `;
+        }
+
+               async function saveEditedMessage(id) {
+            const updatedText = document.getElementById(`editInput-${id}`).value;
+
+            const response = await fetch(`/api/Chat/${id}`, {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: updatedText }) // Send as DTO object
+            });
+
+            if (response.ok) {
+                await loadMessages();
+            } else {
+                alert("Failed to update message.");
+            }
+        }
+
     </script>
 }

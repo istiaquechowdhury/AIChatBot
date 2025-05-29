@@ -4,7 +4,6 @@ using AIChatBot.Web.Hubs;
 using AIChatBot.Web.Interfaces;
 using AIChatBot.Web.Models;
 using AIChatBot.Web.Service;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
@@ -98,7 +97,6 @@ namespace AIChatBot.Web.APIControllers
             //    return Forbid();
 
             message.Message = dto.Message;
-            message.Timestamp = DateTime.UtcNow; // Optionally update the timestamp
 
             await _unitOfWork.CompleteAsync();
 
