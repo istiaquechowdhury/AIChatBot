@@ -14,6 +14,23 @@
 
 @section Scripts {
     <script>
+            async function loadMessages() {
+            const response = await fetch('/api/chat/messages');
+            const messages = await response.json();
+
+            const chatBox = document.getElementById("chatMessages");
+            chatBox.innerHTML = "";
+
+            messages.forEach(msg => {
+                const div = document.createElement("div");
+                div.innerHTML = `<strong>${msg.sender}:</strong> ${msg.message}`;
+                chatBox.appendChild(div);
+            });
+        }
+
+        // Load messages when page first loads
+        window.onload = loadMessages;
+
         document.getElementById("chatForm").addEventListener("submit", async function (e) {
             e.preventDefault();
             const message = document.getElementById("messageInput").value;
@@ -28,6 +45,7 @@
             
 
             document.getElementById("messageInput").value = '';
+             loadMessages();
         });
     </script>
 }

@@ -1,4 +1,5 @@
-﻿using AIChatBot.Web.DTO;
+﻿using AIChatBot.Web.Data;
+using AIChatBot.Web.DTO;
 using AIChatBot.Web.Hubs;
 using AIChatBot.Web.Interfaces;
 using AIChatBot.Web.Models;
@@ -20,12 +21,14 @@ namespace AIChatBot.Web.APIControllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly TavilyService _tavilyService;
         private readonly IHubContext<ChatHub> _hubContext;
+        private readonly ApplicationDbContext _context;
 
-        public ChatController(IUnitOfWork unitOfWork, TavilyService tavilyService, IHubContext<ChatHub> hubContext)
+        public ChatController(IUnitOfWork unitOfWork, TavilyService tavilyService, IHubContext<ChatHub> hubContext, ApplicationDbContext context)
         {
             _unitOfWork = unitOfWork;
             _tavilyService = tavilyService;
             _hubContext = hubContext;
+            _context = context;
         }
 
         private string GetUserId() => User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -136,6 +139,15 @@ namespace AIChatBot.Web.APIControllers
             await _unitOfWork.CompleteAsync();
 
             return Ok("Message approved successfully.");
+        }
+
+        [HttpGet("messages")]
+        public async Task<IActionResult> GetApprovedMessages()
+        {
+            var messages = await _context.ChatMessages.Where(m => m.IsApproved && !m.IsDeleted).ToListAsync();
+
+               
+            return Ok(messages.OrderBy(m => m.Timestamp));
         }
 
 

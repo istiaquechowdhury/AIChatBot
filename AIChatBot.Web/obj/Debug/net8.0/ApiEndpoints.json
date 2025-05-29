@@ -75,6 +75,16 @@
   },
   {
     "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
+    "Method": "GetApprovedMessages",
+    "RelativePath": "api/Chat/messages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
     "Method": "SendMessage",
     "RelativePath": "api/Chat/send",
     "HttpMethod": "POST",
