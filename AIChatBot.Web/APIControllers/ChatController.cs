@@ -45,7 +45,7 @@ namespace AIChatBot.Web.APIControllers
                 Message = messageText,
                 Sender = "user",
                 Timestamp = DateTime.UtcNow,
-                IsApproved = true,
+                IsApproved = false,
                 IsDeleted = false
             };
 
@@ -63,7 +63,7 @@ namespace AIChatBot.Web.APIControllers
                 Message = botReplyText,
                 Sender = "bot",
                 Timestamp = DateTime.UtcNow,
-                IsApproved = true,
+                IsApproved = false,
                 IsDeleted = false
             };
 
