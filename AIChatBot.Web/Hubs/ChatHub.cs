@@ -19,5 +19,15 @@ namespace AIChatBot.Web.Hubs
             Console.WriteLine($"Client disconnected: {Context.ConnectionId}");
             return base.OnDisconnectedAsync(exception);
         }
+
+        public async Task SendTypingNotification(string user)
+        {
+            await Clients.All.SendAsync("ReceiveTypingNotification");
+        }
+
+        public async Task StopTypingNotification(string user)
+        {
+            await Clients.All.SendAsync("StopTypingNotification");
+        }
     }
 }

@@ -6,6 +6,10 @@
 <h2>AI ChatBot</h2>
 
 <div id="chatMessages" style="border:1px solid #ccc; padding:10px; height:300px; overflow-y:scroll;"></div>
+<div id="typingIndicator" style="display: none; font-style: italic; color: gray;">
+    Bot is typing...
+</div>
+
 
 <form id="chatForm">
     <input type="text" id="messageInput" autocomplete="off" placeholder="Type your message..." />
@@ -13,54 +17,6 @@
 </form>
 
 @* @section Scripts {
-    <script>
-            async function loadMessages() {
-            const response = await fetch('/api/chat/messages');
-            const messages = await response.json();
-
-            const chatBox = document.getElementById("chatMessages");
-            chatBox.innerHTML = "";
-
-            messages.forEach(msg => {
-                const div = document.createElement("div");
-
-                      // Start with message text
-                    let content = `<strong>${msg.sender}:</strong> <span id="msg-${msg.id}">${msg.message}</span>`;
-
-                    // 👇 Add Edit button only for user messages
-                    if (msg.sender === "user") {
-                        content += `
-                            <button onclick="editMessage(${msg.id}, '${msg.message.replace(/'/g, "\\'")}')">Edit</button>
-                        `;
-                    }
-
-                div.innerHTML = `<strong>${msg.sender}:</strong> ${msg.message}`;
-                chatBox.appendChild(div);
-            });
-        }
-
-        // Load messages when page first loads
-        window.onload = loadMessages;
-
-        document.getElementById("chatForm").addEventListener("submit", async function (e) {
-            e.preventDefault();
-            const message = document.getElementById("messageInput").value;
-
-            const response = await fetch('/api/Chat/send', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(message)
-            });
-            
-
-            document.getElementById("messageInput").value = '';
-             loadMessages();
-        });
-    </script>
-} *@
-@section Scripts {
     <script>
         async function loadMessages() {
             const response = await fetch('/api/Chat/messages');
@@ -112,6 +68,8 @@
         }
 
 
+
+
         function editMessage(id, currentText) {
             const messageSpan = document.getElementById(`msg-${id}`);
 
@@ -120,6 +78,8 @@
                 <button onclick="saveEditedMessage(${id})">Save</button>
             `;
         }
+
+
 
         async function saveEditedMessage(id) {
             const updatedText = document.getElementById(`editInput-${id}`).value;
@@ -140,6 +100,7 @@
         }
 
 
+
          async function deleteMessage(id) {
             const confirmed = confirm("Are you sure you want to delete this message?");
             if (!confirmed) return;
@@ -156,4 +117,154 @@
         }
 
     </script>
+} *@
+
+@section Scripts {
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+        <script>
+            
+            const connection = new signalR.HubConnectionBuilder()
+                .withUrl("/chathub") // This URL must match the one in your backend
+                .build();
+
+            connection.on("ReceiveTypingNotification", () => {
+                document.getElementById("typingIndicator").style.display = "block";
+            });
+
+            connection.on("StopTypingNotification", () => {
+                document.getElementById("typingIndicator").style.display = "none";
+            });
+
+            connection.start().catch(err => console.error(err.toString()));
+
+
+            let currentPage = 1;
+            const pageSize = 10;
+            let loading = false;
+            let endReached = false;
+
+            async function loadMessages() {
+                if (loading || endReached) return;
+                loading = true;
+
+                const response = await fetch(`/api/Chat/history?page=${currentPage}&pageSize=${pageSize}`);
+                const messages = await response.json();
+
+                if (messages.length === 0) {
+                    endReached = true;
+                    return;
+                }
+
+                const chatBox = document.getElementById("chatMessages");
+
+                messages.forEach(msg => {
+                    const div = document.createElement("div");
+
+                    let content = `<strong>${msg.sender}:</strong> `;
+
+                    if (msg.isDeleted) {
+                        content += `<i>This message was deleted.</i>`;
+                    } else {
+                        content += `<span id="msg-${msg.id}">${msg.message}</span>`;
+                        if (msg.sender === "user") {
+                            content += `
+                                <button onclick="editMessage(${msg.id}, '${msg.message.replace(/'/g, "\\'")}')">Edit</button>
+                                <button onclick="deleteMessage(${msg.id})">Delete</button>
+                            `;
+                        }
+                    }
+
+                    div.innerHTML = content;
+                    chatBox.prepend(div); // Add at the top for infinite scroll
+                });
+
+                currentPage++;
+                loading = false;
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                loadMessages();
+
+                const chatBox = document.getElementById("chatMessages");
+
+                chatBox.addEventListener("scroll", () => {
+                    if (chatBox.scrollTop === 0) {
+                        loadMessages();
+                    }
+                });
+
+                document.getElementById("chatForm").addEventListener("submit", async function (e) {
+                    e.preventDefault();
+                    const message = document.getElementById("messageInput").value;
+
+                         connection.invoke("SendTypingNotification", "user"); // hardcoded for now
+
+                    await fetch('/api/Chat/send', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(message)
+                    });
+
+                    document.getElementById("messageInput").value = '';
+                    chatBox.innerHTML = ''; // Reset messages
+                    currentPage = 1;
+                    endReached = false;
+                    await loadMessages(); // Reload fresh messages
+
+                    // 🔕 Hide "Bot is typing..." after response
+                      connection.invoke("StopTypingNotification", "user");
+                });
+            });
+
+            function editMessage(id, currentText) {
+                const messageSpan = document.getElementById(`msg-${id}`);
+
+                messageSpan.innerHTML = `
+                    <input type="text" id="editInput-${id}" value="${currentText}" />
+                    <button onclick="saveEditedMessage(${id})">Save</button>
+                `;
+            }
+
+            async function saveEditedMessage(id) {
+                const updatedText = document.getElementById(`editInput-${id}`).value;
+
+                const response = await fetch(`/api/Chat/${id}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ message: updatedText })
+                });
+
+                if (response.ok) {
+                    document.getElementById("chatMessages").innerHTML = '';
+                    currentPage = 1;
+                    endReached = false;
+                    await loadMessages();
+                } else {
+                    alert("Failed to update message.");
+                }
+            }
+
+            async function deleteMessage(id) {
+                const confirmed = confirm("Are you sure you want to delete this message?");
+                if (!confirmed) return;
+
+                const response = await fetch(`/api/Chat/${id}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    document.getElementById("chatMessages").innerHTML = '';
+                    currentPage = 1;
+                    endReached = false;
+                    await loadMessages();
+                } else {
+                    alert("Failed to delete message.");
+                }
+            }
+        </script>
 }
+
