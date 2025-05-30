@@ -54,8 +54,8 @@
   },
   {
     "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
-    "Method": "GetChatHistory",
-    "RelativePath": "api/Chat/history",
+    "Method": "GetAllMessagesForAdmin",
+    "RelativePath": "api/Chat/admin/all-messages",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -76,11 +76,22 @@
   {
     "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
     "Method": "GetApprovedMessages",
-    "RelativePath": "api/Chat/messages",
+    "RelativePath": "api/Chat/history",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [],
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": []
   },
   {

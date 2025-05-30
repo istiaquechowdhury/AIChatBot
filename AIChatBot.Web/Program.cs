@@ -1,5 +1,6 @@
 using AIChatBot.Web.Data;
 using AIChatBot.Web.Hubs;
+using AIChatBot.Web.IdentitySeed;
 using AIChatBot.Web.Interfaces;
 using AIChatBot.Web.Repositories;
 using AIChatBot.Web.Service;
@@ -12,11 +13,15 @@ var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
+
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultTokenProviders();
+
 builder.Services.AddControllersWithViews();
+builder.Services.AddRazorPages();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IChatMessageRepository, ChatMessageRepository>();
 builder.Services.AddSingleton<TavilyService>();
@@ -49,5 +54,11 @@ app.MapControllerRoute(
 
 app.MapHub<ChatHub>("/chathub");
 app.MapRazorPages();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await IdentitySeed.SeedRolesAndAdminAsync(services);
+}
 
 app.Run();

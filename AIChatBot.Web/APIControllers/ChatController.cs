@@ -4,9 +4,11 @@ using AIChatBot.Web.Hubs;
 using AIChatBot.Web.Interfaces;
 using AIChatBot.Web.Models;
 using AIChatBot.Web.Service;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.EntityFrameworkCore;
+using System.Drawing.Printing;
 using System.Security.Claims;
 
 namespace AIChatBot.Web.APIControllers
@@ -31,6 +33,10 @@ namespace AIChatBot.Web.APIControllers
         }
 
         private string GetUserId() => User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+
+        private bool IsAdmin() => User.IsInRole("Admin");
+
 
 
         [HttpPost("send")]
@@ -109,8 +115,8 @@ namespace AIChatBot.Web.APIControllers
         {
             var message = await _unitOfWork.ChatMessages.GetMessageByIdAsync(id);
 
-            if (message.Sender == "bot")
-                return BadRequest("Cannot delete bot message");
+            //if (message.Sender == "bot")
+            //    return BadRequest("Cannot delete bot message");
 
             if (message == null || message.IsDeleted) return BadRequest();
 
@@ -139,24 +145,54 @@ namespace AIChatBot.Web.APIControllers
             return Ok("Message approved successfully.");
         }
 
-        [HttpGet("messages")]
-        public async Task<IActionResult> GetApprovedMessages()
+        [HttpGet("history")]
+        [Authorize(Roles = "User")]
+        public async Task<IActionResult> GetApprovedMessages(int page = 1, int pageSize = 10)
         {
-            var messages = await _context.ChatMessages.Where(m => m.IsApproved && !m.IsDeleted).ToListAsync();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier); // Securely get logged-in user's ID
 
-               
-            return Ok(messages.OrderBy(m => m.Timestamp));
+            var messages = await _context.ChatMessages
+                .Where(m => m.IsApproved && !m.IsDeleted && m.UserId == userId)
+                .OrderByDescending(m => m.Timestamp)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return Ok(messages); // Final order from oldest to newest
         }
 
+        //[HttpGet("history")]
+        //public async Task<IActionResult> GetChatHistory(int page = 1, int pageSize = 10)
+        //{
+        //    var messages = await _unitOfWork.ChatMessages
+        //        .GetMessagesByUserAsync(GetUserId(), page, pageSize);
 
+        //    return Ok(messages);
+        //}
 
+        //[HttpGet("admin/all-messages")]
+        //public async Task<IActionResult> GetAllMessagesForAdmin()
+        //{
+        //    if (!IsAdmin())
+        //        return Forbid();
 
+        //    var allMessages = await _context.ChatMessages
+        //        .Where(m => !m.IsDeleted)
+        //        .OrderBy(m => m.Timestamp)
+        //        .ToListAsync();
 
-        [HttpGet("history")]
-        public async Task<IActionResult> GetChatHistory(int page = 1, int pageSize = 10)
+        //    return Ok(allMessages);
+        //}
+        [HttpGet("admin/all-messages")]
+        [Authorize(Roles = "Admin")]
+        public async Task<IActionResult> GetAllMessagesForAdmin(int page = 1, int pageSize = 10)
         {
-            var messages = await _unitOfWork.ChatMessages
-                .GetMessagesByUserAsync(GetUserId(), page, pageSize);
+            var messages = await _context.ChatMessages
+                .Where(m => !m.IsDeleted)
+                .OrderByDescending(m => m.Timestamp)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
 
             return Ok(messages);
         }

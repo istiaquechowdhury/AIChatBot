@@ -15,7 +15,9 @@
     <input type="text" id="messageInput" autocomplete="off" placeholder="Type your message..." />
     <button type="submit">Send</button>
 </form>
-
+<script>
+    const isAdmin = '@User.IsInRole("Admin")' === 'True';
+</script>
 @section Scripts {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
         <script>
@@ -43,8 +45,12 @@
             async function loadMessages() {
                 if (loading || endReached) return;
                 loading = true;
+                    const url = isAdmin
+                    ? `/api/Chat/admin/all-messages?page=${currentPage}&pageSize=${pageSize}` // admin gets all messages
+                    : `/api/Chat/history?page=${currentPage}&pageSize=${pageSize}`; // user gets only approved
+                const response = await fetch(url);
 
-                const response = await fetch(`/api/Chat/history?page=${currentPage}&pageSize=${pageSize}`);
+                //const response = await fetch(`/api/Chat/history?page=${currentPage}&pageSize=${pageSize}`);
                 const messages = await response.json();
 
                 if (messages.length === 0) {
@@ -72,7 +78,9 @@
                         }
                         else if(msg.sender === "bot") {
                             content += `
-                               
+
+
+                                <button onclick="deleteMessage(${msg.id})">Delete</button>
                                 ${!msg.isApproved ? `<button onclick="approveMessage(${msg.id})">Approve</button>` : ''}
                             `;
                         }
