@@ -12,6 +12,8 @@ obj/
 Logs/
 *.log
 
+.vs/
+
 ## VS Code
 .vscode/
 
