@@ -1,9 +1,11 @@
 using System.Diagnostics;
 using AIChatBot.Web.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AIChatBot.Web.Controllers
 {
+    
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -22,6 +24,7 @@ namespace AIChatBot.Web.Controllers
         {
             return View();
         }
+        [Authorize]
         public IActionResult Chat()
         {
             return View();

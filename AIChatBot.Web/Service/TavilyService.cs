@@ -12,7 +12,7 @@ namespace AIChatBot.Web.Service
         {
             _httpClient = new HttpClient();
             _apiKey = config["Tavily:ApiKey"];
-            Console.WriteLine($"Using API Key: {_apiKey}");
+           
         }
 
        

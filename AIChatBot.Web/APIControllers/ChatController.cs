@@ -9,6 +9,7 @@ namespace AIChatBot.Web.APIControllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    
    
     
     public class ChatController : ControllerBase
