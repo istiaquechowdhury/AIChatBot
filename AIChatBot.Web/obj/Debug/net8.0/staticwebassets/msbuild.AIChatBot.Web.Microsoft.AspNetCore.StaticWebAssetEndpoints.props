@@ -4,13 +4,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AIChatBot.Web.r6napc26l4.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HWNP6ps5XE\u002BMCDpnSlfPQVK82UBDwdTzYM7UvPG9JYo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HWNP6ps5XE\u002BMCDpnSlfPQVK82UBDwdTzYM7UvPG9JYo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 30 May 2025 11:03:52 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HWNP6ps5XE\u002BMCDpnSlfPQVK82UBDwdTzYM7UvPG9JYo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 31 May 2025 11:26:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AIChatBot.Web/AIChatBot.Web.r6napc26l4.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AIChatBot.Web.r6napc26l4.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r6napc26l4"},{"Name":"integrity","Value":"sha256-HWNP6ps5XE\u002BMCDpnSlfPQVK82UBDwdTzYM7UvPG9JYo="},{"Name":"label","Value":"_content/AIChatBot.Web/AIChatBot.Web.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HWNP6ps5XE\u002BMCDpnSlfPQVK82UBDwdTzYM7UvPG9JYo=\u0022"},{"Name":"Last-Modified","Value":"Fri, 30 May 2025 11:03:52 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1131"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HWNP6ps5XE\u002BMCDpnSlfPQVK82UBDwdTzYM7UvPG9JYo=\u0022"},{"Name":"Last-Modified","Value":"Sat, 31 May 2025 11:26:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AIChatBot.Web/css/site.c2tiyv64ts.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>

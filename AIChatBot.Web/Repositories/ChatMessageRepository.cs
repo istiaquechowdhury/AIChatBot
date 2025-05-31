@@ -16,12 +16,13 @@ namespace AIChatBot.Web.Repositories
 
         public async Task<IEnumerable<ChatMessage>> GetMessagesByUserAsync(string userId, int page, int pageSize)
         {
-            return await _context.ChatMessages
-                .Where(m => m.UserId == userId && !m.IsDeleted)
+                return await _context.ChatMessages
+                .Where(m => m.IsApproved && !m.IsDeleted && m.UserId == userId)
                 .OrderByDescending(m => m.Timestamp)
                 .Skip((page - 1) * pageSize)
                 .Take(pageSize)
                 .ToListAsync();
+
         }
 
         public async Task AddMessageAsync(ChatMessage message)
@@ -37,6 +38,20 @@ namespace AIChatBot.Web.Repositories
         public async Task UpdateMessageAsync(ChatMessage message)
         {
             _context.ChatMessages.Update(message);
+        }
+
+        
+
+        public async Task<IEnumerable<ChatMessage>> GetAllUndeletedMessages(int page, int pageSize)
+        {
+                 return await _context.ChatMessages
+                .Where(m => !m.IsDeleted)
+                .OrderByDescending(m => m.Timestamp)
+                .Skip((page - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            
         }
     }
 }

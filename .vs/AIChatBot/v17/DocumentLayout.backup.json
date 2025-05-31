@@ -3,20 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\apicontrollers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\apicontrollers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\views\\home\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\views\\home\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\repositories\\chatmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\repositories\\chatmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\service\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\service\\chatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\service\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\service\\ichatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\apicontrollers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\apicontrollers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\interfaces\\ichatmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\interfaces\\ichatmessagerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\dto\\editmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\dto\\editmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\identityseed\\identityseed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,56 +47,16 @@
       "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\models\\chatmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\repositories\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\views\\home\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\views\\home\\chat.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\dto\\editmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\dto\\editmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\service\\tavilyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\service\\tavilyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|c:\\users\\istia\\onedrive\\desktop\\aichatbot\\aichatbot.web\\dto\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BAB093A-A7D5-4459-984A-2C9E9C19D7B4}|AIChatBot.Web\\AIChatBot.Web.csproj|solutionrelative:aichatbot.web\\dto\\sendmessagedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,258 +66,192 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "RelativeToolTip": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAAAGgAAAAIAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "SendMessageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\DTO\\SendMessageDTO.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\DTO\\SendMessageDTO.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\DTO\\SendMessageDTO.cs",
+              "RelativeToolTip": "AIChatBot.Web\\DTO\\SendMessageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T16:26:00.767Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ChatMessageRepository.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Repositories\\ChatMessageRepository.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Repositories\\ChatMessageRepository.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Repositories\\ChatMessageRepository.cs",
-              "RelativeToolTip": "AIChatBot.Web\\Repositories\\ChatMessageRepository.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T12:23:20.217Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAAAJwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T12:20:49.849Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "RelativeToolTip": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T12:20:39.714Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T12:20:36.317Z",
+              "WhenOpened": "2025-05-31T10:41:31.5Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "AIChatBot.Web\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T11:42:32.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "RelativeToolTip": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-30T11:41:36.766Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ScaffoldingReadMe.txt",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\ScaffoldingReadMe.txt",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\ScaffoldingReadMe.txt",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\ScaffoldingReadMe.txt",
-              "RelativeToolTip": "AIChatBot.Web\\ScaffoldingReadMe.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-05-30T11:38:48.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IdentitySeed.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\IdentitySeed\\IdentitySeed.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\IdentitySeed\\IdentitySeed.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\IdentitySeed\\IdentitySeed.cs",
-              "RelativeToolTip": "AIChatBot.Web\\IdentitySeed\\IdentitySeed.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T10:48:51.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "EditMessageDTO.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\DTO\\EditMessageDTO.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\DTO\\EditMessageDTO.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\DTO\\EditMessageDTO.cs",
-              "RelativeToolTip": "AIChatBot.Web\\DTO\\EditMessageDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T05:28:48.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Repositories\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Repositories\\UnitOfWork.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Repositories\\UnitOfWork.cs",
-              "RelativeToolTip": "AIChatBot.Web\\Repositories\\UnitOfWork.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T17:24:57.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Chat.cshtml",
               "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Views\\Home\\Chat.cshtml",
               "RelativeDocumentMoniker": "AIChatBot.Web\\Views\\Home\\Chat.cshtml",
               "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Views\\Home\\Chat.cshtml",
               "RelativeToolTip": "AIChatBot.Web\\Views\\Home\\Chat.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADEAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T17:08:13.422Z",
+              "WhenOpened": "2025-05-31T10:14:56.123Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "AIChatBot.Web\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADEAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-28T17:06:43.607Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "TavilyService.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Service\\TavilyService.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Service\\TavilyService.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Service\\TavilyService.cs",
-              "RelativeToolTip": "AIChatBot.Web\\Service\\TavilyService.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAFAAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 11,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Repositories\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\Repositories\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Repositories\\UnitOfWork.cs",
+              "RelativeToolTip": "AIChatBot.Web\\Repositories\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T16:41:04.276Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\appsettings.json",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\appsettings.json",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\appsettings.json",
-              "RelativeToolTip": "AIChatBot.Web\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-28T16:35:45.087Z",
+              "WhenOpened": "2025-05-31T09:57:40.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ChatHub.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Hubs\\ChatHub.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\Hubs\\ChatHub.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Hubs\\ChatHub.cs",
-              "RelativeToolTip": "AIChatBot.Web\\Hubs\\ChatHub.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAwwA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T14:36:05.898Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "ChatMessage.cs",
               "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Models\\ChatMessage.cs",
               "RelativeDocumentMoniker": "AIChatBot.Web\\Models\\ChatMessage.cs",
               "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Models\\ChatMessage.cs",
               "RelativeToolTip": "AIChatBot.Web\\Models\\ChatMessage.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T14:34:00.472Z",
+              "WhenOpened": "2025-05-31T09:57:14.836Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ChatController.cs",
-              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\APIControllers\\ChatController.cs",
-              "RelativeDocumentMoniker": "AIChatBot.Web\\APIControllers\\ChatController.cs",
-              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\APIControllers\\ChatController.cs",
-              "RelativeToolTip": "AIChatBot.Web\\APIControllers\\ChatController.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAuwKEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "IdentitySeed.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\IdentitySeed\\IdentitySeed.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\IdentitySeed\\IdentitySeed.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\IdentitySeed\\IdentitySeed.cs",
+              "RelativeToolTip": "AIChatBot.Web\\IdentitySeed\\IdentitySeed.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T14:26:59.002Z",
+              "WhenOpened": "2025-05-31T09:56:52.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "AIChatBot.Web\\Hubs\\ChatHub.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T09:56:43.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditMessageDTO.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\DTO\\EditMessageDTO.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\DTO\\EditMessageDTO.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\DTO\\EditMessageDTO.cs",
+              "RelativeToolTip": "AIChatBot.Web\\DTO\\EditMessageDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T09:56:36.145Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "IChatMessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Interfaces\\IChatMessageRepository.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\Interfaces\\IChatMessageRepository.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Interfaces\\IChatMessageRepository.cs",
+              "RelativeToolTip": "AIChatBot.Web\\Interfaces\\IChatMessageRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T08:21:31.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ChatMessageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Repositories\\ChatMessageRepository.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\Repositories\\ChatMessageRepository.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Repositories\\ChatMessageRepository.cs",
+              "RelativeToolTip": "AIChatBot.Web\\Repositories\\ChatMessageRepository.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T04:45:22.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Program.cs",
               "RelativeDocumentMoniker": "AIChatBot.Web\\Program.cs",
               "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Program.cs",
               "RelativeToolTip": "AIChatBot.Web\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAAByAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAAAA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T14:22:05.829Z",
+              "WhenOpened": "2025-05-31T05:00:35.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "AIChatBot.Web\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T04:45:22.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ChatService.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Service\\ChatService.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\Service\\ChatService.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Service\\ChatService.cs",
+              "RelativeToolTip": "AIChatBot.Web\\Service\\ChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T04:34:48.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IChatService.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Service\\IChatService.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\Service\\IChatService.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\Service\\IChatService.cs",
+              "RelativeToolTip": "AIChatBot.Web\\Service\\IChatService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T04:34:20.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\APIControllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "AIChatBot.Web\\APIControllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\istia\\OneDrive\\Desktop\\AIChatBot\\AIChatBot.Web\\APIControllers\\ChatController.cs",
+              "RelativeToolTip": "AIChatBot.Web\\APIControllers\\ChatController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T04:32:42.973Z",
               "EditorCaption": ""
             }
           ]

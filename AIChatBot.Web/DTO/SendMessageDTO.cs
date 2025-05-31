@@ -2,7 +2,7 @@
 
 namespace AIChatBot.Web.DTO
 {
-    public class EditMessageDTO
+    public class SendMessageDTO
     {
         [Required]
         [StringLength(1000, MinimumLength = 1)]

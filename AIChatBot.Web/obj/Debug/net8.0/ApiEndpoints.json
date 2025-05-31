@@ -75,7 +75,7 @@
   },
   {
     "ContainingType": "AIChatBot.Web.APIControllers.ChatController",
-    "Method": "GetApprovedMessages",
+    "Method": "GetChatHistory",
     "RelativePath": "api/Chat/history",
     "HttpMethod": "GET",
     "IsController": true,
@@ -103,8 +103,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "messageText",
-        "Type": "System.String",
+        "Name": "dto",
+        "Type": "AIChatBot.Web.DTO.SendMessageDTO",
         "IsRequired": true
       }
     ],

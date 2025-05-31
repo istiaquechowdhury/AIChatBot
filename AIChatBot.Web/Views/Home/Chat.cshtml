@@ -46,11 +46,10 @@
                 if (loading || endReached) return;
                 loading = true;
                     const url = isAdmin
-                    ? `/api/Chat/admin/all-messages?page=${currentPage}&pageSize=${pageSize}` // admin gets all messages
-                    : `/api/Chat/history?page=${currentPage}&pageSize=${pageSize}`; // user gets only approved
+                    ? `/api/Chat/admin/all-messages?page=${currentPage}&pageSize=${pageSize}` 
+                    : `/api/Chat/history?page=${currentPage}&pageSize=${pageSize}`; 
                 const response = await fetch(url);
 
-                //const response = await fetch(`/api/Chat/history?page=${currentPage}&pageSize=${pageSize}`);
                 const messages = await response.json();
 
                 if (messages.length === 0) {
@@ -106,29 +105,35 @@
                     }
                 });
 
-                document.getElementById("chatForm").addEventListener("submit", async function (e) {
-                    e.preventDefault();
-                    const message = document.getElementById("messageInput").value;
+                        document.getElementById("chatForm").addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const messageInput = document.getElementById("messageInput");
+            const message = messageInput.value.trim();
 
-                         connection.invoke("SendTypingNotification", "user"); // hardcoded for now
+            if (!message) {
+                alert("Please enter a message.");
+                return;
+            }
 
-                    await fetch('/api/Chat/send', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(message)
-                    });
+            connection.invoke("SendTypingNotification", "user");
 
-                    document.getElementById("messageInput").value = '';
-                    chatBox.innerHTML = ''; // Reset messages
-                    currentPage = 1;
-                    endReached = false;
-                    await loadMessages(); // Reload fresh messages
+            await fetch('/api/Chat/send', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({message})
+            });
 
-                    // 🔕 Hide "Bot is typing..." after response
-                      connection.invoke("StopTypingNotification", "user");
-                });
+            messageInput.value = '';
+            document.getElementById("chatMessages").innerHTML = '';
+            currentPage = 1;
+            endReached = false;
+            await loadMessages();
+
+            connection.invoke("StopTypingNotification", "user");
+        });
+
             });
 
             function editMessage(id, currentText) {
@@ -188,7 +193,7 @@
 
                     if (response.ok) {
                         alert("Message approved successfully.");
-                        await loadMessages(); // Reload messages to reflect approval
+                        await loadMessages(); 
                     } else {
                         const errorText = await response.text();
                         alert("Error: " + errorText);

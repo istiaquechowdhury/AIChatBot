@@ -8,5 +8,6 @@ namespace AIChatBot.Web.Interfaces
         Task AddMessageAsync(ChatMessage message);
         Task<ChatMessage?> GetMessageByIdAsync(int id);
         Task UpdateMessageAsync(ChatMessage message);
+        Task<IEnumerable<ChatMessage>> GetAllUndeletedMessages(int page, int pageSize);
     }
 }

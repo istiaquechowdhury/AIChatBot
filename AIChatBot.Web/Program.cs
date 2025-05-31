@@ -26,6 +26,7 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IChatMessageRepository, ChatMessageRepository>();
 builder.Services.AddSingleton<TavilyService>();
 builder.Services.AddSignalR();
+builder.Services.AddScoped<IChatService, ChatService>();
 
 var app = builder.Build();
 
