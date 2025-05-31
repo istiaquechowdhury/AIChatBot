@@ -1,0 +1,34 @@
+## Build
+bin/
+obj/
+
+## User-specific
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Logs
+Logs/
+*.log
+
+## VS Code
+.vscode/
+
+## Secrets
+appsettings.Development.json
+appsettings.Local.json
+.env
+
+## Publish output
+wwwroot/uploads/
+publish/
+*.db
+
+## Dependency folders
+node_modules/
+packages/
+
+## Others
+*.DS_Store
+Thumbs.db
